@@ -1,0 +1,396 @@
+/* General */
+body {
+	background:lightslategray;
+	font-family:Arial;
+	font-size:0.8em;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+h1, h2 {
+	padding:0;
+	margin:0 0 20px 0;
+	font-weight:normal;
+}
+p {
+	padding:0;
+	margin:0 0 20px 0;
+}
+a:link, a:visited {
+	text-decoration:underline;
+	color:#000;
+}
+a:hover {
+	text-decoration:none;
+}
+ul li {
+	padding:5px 0;
+}
+ul li input[type="text"], ul li input[type="password"] {
+	width:200px;
+}
+textarea{
+	width:400px;
+	height:150px;
+}
+h1 {
+	font-size:1.8em;
+}
+h2 {
+	font-size:1.4em;
+}
+
+/* Header */
+header {
+	width:940px;
+	padding:10px;
+	margin:0 auto 10px auto;
+}
+.logo {
+	font:2em Arial;
+	margin:0 0 10px 0;
+	padding:0;
+	width:300px;
+	color:#fff;
+}
+
+/* Container */
+#container, footer {
+	background:#fff;
+	
+	width:920px;
+	margin:0 auto;
+	padding:20px;
+}
+#container {
+	min-height:1000px;
+	border-radius:5px 5px 0 0;
+}
+
+/* Topnav */
+nav ul#topnav {
+
+}
+nav ul#topnav li {
+	background:#fff;
+	float:left;
+}
+nav ul#topnav li.highlight{
+	background: #AAA;
+}
+nav ul#topnav li a {
+	text-decoration:none;
+	display:block;
+	padding:5px 10px;
+	color:#000;
+	border-bottom: 1px solid #ccc;
+}
+
+nav ul#topnav li a:hover{
+	background-color: #AAA;
+}
+a#selected {
+	background-color: #000;
+}
+nav ul#topnav li:hover ul{
+	display:block;
+}
+nav ul#topnav li ul{
+	position:absolute;
+	display:none;
+}
+nav ul#topnav li ul li{
+	float:none;
+}
+
+
+/*Home Page*/
+ul.curproj, ul.pastproj{
+	list-style:disc;
+	margin:20px;
+}
+.curproj li p, .pastproj li p{
+	margin:0 0 0 60px;
+}
+img.scrshot{
+	width:900px;
+}
+#Home{
+	width:625px;
+}
+.bullets{
+	list-style-type:circles;
+	}
+#Home #slider{ 
+	border: 10px solid #ccc;
+	border-radius:5px;
+	width:605px;
+	height:280px;
+	position:relative;
+	overflow:hidden;
+	}
+#Home #slider span.info-area{
+	position:absolute;
+	bottom: 0;
+	left:0;
+	width:605px;
+	background: #000;
+	/*CSS3 introduces rgba where a stands for alpha
+	 if the user uses a css3 supported browser, rgba will display*/
+	background:rgba(0,0,0,.75);
+	color:#fff;
+	padding:15px;
+	font:1em Georgia, serif;
+	font-style:italic;
+}
+#Home #news{
+	width:625px;
+}
+	
+.top_stories{
+	/*background-color:#EFC9A0;*/
+	overflow: hidden;
+	display:block;
+	height:187px;
+}
+.top_stories div.top{
+	width:100%;
+	display:block;
+	height:20px;
+}
+.top_stories div.user_info{
+	width:140px;
+	height:120px;
+}
+.top_stories div.story{
+	/*background-color:#EFC9A0;*/
+	overflow: hidden;
+	display:block;
+	height:120px;
+}
+.top_stories div.bottom{
+	width:100%;
+}
+a.like{
+	background-color:#3b3c3d;
+	color:#fff;
+	text-decoration: none;
+	padding:2px 6px;
+	border-radius:5px;
+	border:1px solid #000;
+}
+.top_stories .user_info{
+	float:left;
+	width:10%;
+}
+
+.top_stories h3{
+	padding:0 0 0 0;
+	margin:0;
+}
+
+/*Admin Page*/
+#Admin{
+	
+}
+/*Profile Page*/
+#profile{
+	width:625px;
+	
+}
+#profile .top_row{
+	display:block;
+	height:225px;
+	border-bottom: 5px solid #000;
+}
+#profile .top_row .pic{
+	float:left;
+	max-width:300px;
+	padding: 0 20px 0 0;
+}
+#profile .top_row .info{
+	float:left;
+	width:300px;
+}
+#profile #description{
+	
+}
+#profile #description #tabs{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+#profile #description #tabs ul{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+#profile #description #tabs li{
+	display:block;
+	float:left;
+	text-align: center;
+	background: #ccc;
+	border:1px solid #999;
+	margin:0px;
+	padding:0px;
+	width:32.9%;
+	color:#999;
+	cursor:pointer;
+}
+
+#profile #description #tabs li.active{
+	background: #efefef;
+	border-bottom: 1px solid #efefef
+}
+#profile #description #tab_bottom{
+	width:100%;
+}
+#profile #description #tab_bottom div{
+	clear:left;
+	background:#efefef;
+	width:100%;
+	max-height:750px;
+}
+
+/* Footer */
+footer {
+	border-radius:0 0 5px 5px;
+	border-top:1px dashed #ddd;
+	color:#999;
+}
+
+/* Misc */
+.clear {
+	clear:both;
+}
+.error_msgs{
+	background: url(../images/x.png);
+	color:red;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding-left: 25px;
+
+}
+
+/*Forum*/
+#Forum{
+	width:625px;
+}
+#Forum .main{
+	border:1px solid #ccc;
+	border-radius:5px;
+	background-color: #ccc;
+}
+#Forum .main .overall_post{
+	min-height: 52px;
+	display:block;
+	overflow:hidden;
+	border-top:1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#Forum .main .overall_post .user_info{
+	float:left;
+	border:1px solid #000;
+	width:10%;
+	min-height:52px;
+}
+#Forum .main .overall_post .post{
+	text-align:left;
+	float:left;
+	overflow:hidden;
+	word-wrap: break-word;
+	max-width:80%;
+	margin-right:30px;
+}
+#Forum .main .overall_post .post p{
+	text-align:left;
+}
+#Forum .main span.categories{
+	display: block;
+	padding:5px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	border:1px solid #000;
+	margin-bottom: 5px;
+	background-color: #ccc;
+	color: #000;
+}
+
+/*Chat Page*/
+#Chat{
+	width:625px;
+}
+#Chat ul li{
+	display:block;
+}
+#Chat ul li form{
+	
+}
+
+/*News Page*/
+#News{
+	width:625px;
+}
+ .comment{
+	display:block;
+	border:1px solid #000;
+	min-height:52px;
+}
+ .comment .user_info{
+	float:left;
+	width:10%;
+}
+#Search{
+	width:625px;
+	
+}
+#Search a{
+	text-decoration: none;
+}
+#Search .result{
+	display:block;
+}
+#search_box{
+	position:absolute;
+	top:2%;
+	left:60%;
+}
+#About{
+	width:625px;
+}
+#About #about-top{
+	height:300px;
+}
+#About #about-top #topline{
+	height:20px;
+	display:block;
+	margin-bottom: 20px;
+}
+#About #about-top #text{
+	float:left;
+	width:80%;
+	word-wrap: break-word;
+}
+#About #about-top #pic{
+	float:left;
+	width:20%;
+}
+#Posts{
+	width:625px;
+}
+#new_user{
+	width:625px;
+}
+#new_user ul li ul{
+	list-style-type: circle; 
+}
+
+#Suggest{
+	width:625px;
+}

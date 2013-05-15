@@ -1,0 +1,61 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>JavaScript Palette</title>
+		<link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles.css" />
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var str=location.href.toLowerCase();
+				$("#topnav li a").each(function() {
+				if (str.indexOf(this.href.toLowerCase()) > -1) {
+		 			$("li.highlight").removeClass("highlight");
+					$(this).parent().addClass("highlight");
+				}
+		 	});
+		 })
+	   </script>
+	</head>
+	<body>
+		<header>
+			<h1 class="logo">CSCCS Github Page</h1>
+			<nav>
+				<ul id="topnav">
+					<li class="highlight">
+						<a href="../index.htm">Home</a>
+					</li>
+					<li><a href="../FireRecord.htm">FireRecord</a></li>
+					<li><a href="../Palettes.htm">Palettes</a>
+						<ul>
+							<li><a href="https://code.google.com/p/edu-mass-qcc-javalearningpalette/">Java Palette</a></li>
+							<li><a href="https://code.google.com/p/edu-mass-qcc-cpluspluslearningpalette/">C++ Palette</a></li>
+							<li><a href="PhpPalette.htm">PHP Palette</a></li>
+							<li><a href="JSPalette.htm">Javascript Palette</a></li>
+						</ul>
+					</li>
+					<li><a href="../pastproj.htm">Past Projects</a>
+						<ul>
+							<li><a href="../PastProj/javachat.htm">Java Chat</a></li>
+							<li><a href="https://code.google.com/p/autoexplorer/">Auto Explorer</a></li>
+						</ul>
+					</li>
+					<li><a href="../about.htm">About Us</a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</header>
+
+	<div id="container">
+		<h1>JavaScript Palette</h1>
+		<p>JavaScript Palette is a plugin module designed very similarly to the PHP palette. In fact, the demonstration and installation instructions
+		are the same as they are for the PHP palette.</p>
+		<p>For detailed instructions, please see the <a href="PhpPalette.htm">PHP palette</a>.</p>
+	</div>
+		
+		<footer>
+			Web Design by Bill Jellesma
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>Java Chat</title>
+		<link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles.css" />
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var str=location.href.toLowerCase();
+				$("#topnav li a").each(function() {
+				if (str.indexOf(this.href.toLowerCase()) > -1) {
+		 			$("li.highlight").removeClass("highlight");
+					$(this).parent().addClass("highlight");
+				}
+		 	});
+		 })
+	   </script>
+	</head>
+	<body>
+		<header>
+			<h1 class="logo">CSCCS Github Page</h1>
+			<nav>
+				<ul id="topnav">
+					<li class="highlight">
+						<a href="../index.htm">Home</a>
+					</li>
+					<li><a href="../FireRecord.htm">FireRecord</a></li>
+					<li><a href="../Palettes.htm">Palettes</a>
+						<ul>
+							<li><a href="https://code.google.com/p/edu-mass-qcc-javalearningpalette/">Java Palette</a></li>
+							<li><a href="https://code.google.com/p/edu-mass-qcc-cpluspluslearningpalette/">C++ Palette</a></li>
+							<li><a href="PhpPalette.htm">PHP Palette</a></li>
+							<li><a href="JSPalette.htm">Javascript Palette</a></li>
+						</ul>
+					</li>
+					<li><a href="../pastproj.htm">Past Projects</a>
+						<ul>
+							<li><a href="../PastProj/javachat.htm">Java Chat</a></li>
+							<li><a href="https://code.google.com/p/autoexplorer/">Auto Explorer</a></li>
+						</ul>
+					</li>
+					<li><a href="../about.htm">About Us</a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</header>
+
+	<div id="container">
+	
+	
+		<h1>Java Chat</h1>
+		<p>A chat program for chatting over a local server or with Dale and Steve.</p>
+		<a href="../downloads/JavaChat.zip">Download</a><br />
+		<a href="#demo">Demonstration</a><br />
+		<a href="#install">Install</a><br /><br />
+		<h1><a name="demo">Demonstration</a></h1>
+		<p>Java Chat has several features including:
+		<ul class="bullets">
+			<li>A signin/registration page (To register your account with a local database)</li>
+			<li>"Mainframe Chat" where you are able to chat with anyone. Currently, it only works on a local server so that the other person also needs to be able 
+			to access your computer, either through a local or remote connection.</li>
+			<li>Dale and Steve are two primative versions of AI that are always available as long as their respective jar files are running.</li>
+			<li>Once you register, you will have an account with the program, where you can save a profile picture and other personalized information.</ll>
+			<li>On the current version, a private chat feature is available but contains bugs.</li>
+		</ul>
+		<img class="scrshot" src="../images/jc1.png" />
+		<ul>
+			<li>A username and password are required and must each be between 6 and 20 characters.</li>
+			<li>Profile Pictures are optional and can be jpg, jpeg, gif, png (Case insensative).</li>
+			<li>A prefered name and motto are also optional.</li>
+		</ul>
+		<img class="scrshot" src="../images/jc2.png" />
+		<p>Mainframe chat is the main Hub and contains links to documentation, sign out, bot chat, private chat, account</p>
+		<img class="scrshot" src="../images/jc3.png" />
+		<p>It is important to note, as above, that Dale and Steve are separate programs and have their own jar files, which must be ran in order to participate in BOT chat. </p>
+		<img class="scrshot" src="../images/jc4.png" />
+		<p>Profile pictures will change in real time. As of the current version, it is impossible to change the username.</p>
+		<img class="scrshot" src="../images/jc5.png" />
+		<p>As of the current version, you will only be able to exit on timeout.</p>
+	
+	
+	<h1><a name="install">Installation Instructions</a></h1>
+	<p>After you download the program (.zip)</p>
+	<ol>
+<li>The 3 zip folders (dalebot.zip, stevebot.zip, and java chat.zip) are projects to be run from netbeans</li>
+<li>the powerpoint (java chat.pptx) will give an overview of the program</li>
+<li>the database file (billj_chat.sql) will be used later to insert into the database</li>
+<li>Download and install a local wampserver  http://www.wampserver.com/en/  
+	a. you must also download and install C++ 2010 SP1 Redistributable Package x86 or x64 in order 	to use wampserver
+		x86 (32 bit): http://www.microsoft.com/download/en/details.aspx?id=8328
+		x64 (64 bit): http://www.microsoft.com/download/en/details.aspx?id=13523</li>
+<li>Once the local server is installed on your computer, a desktop icon should show up on your desktop (if not, look in your start menu, write 
+click wampserver and send to desktop), double click the icon to run</li>
+<li>From a preferred browser, navigate to localhost homepage by entering localhost or 127.0.0.1 into the address bar</li>
+<li>from the localhost page, go to phpmyadmin (phpmyadmin is a link located under tools</li>
+<li>In phpmyadmin, create a new database( by clicking databases at the top) and call it billj_chat and enter billj_chat by clicking on it</li>
+<li>in billj_chat, import billj_chat.sql by using the import tab, located at the top of the page (choose the file billj_chat.sql and click the 
+“go” button at the bottom of the page)</li>
+<li>Done! Remember, if you want to talk to Dale or Steve, run their respective programs, Dalebot and Stevebot, as well 
+as Java Chat (if you’re using netbeans 7.2, you may need to run servertest.java, a file in each one of the projects)</li>
+<li>IF JAVA CHAT HAS A REFERENCE PROBLEM, the mysql jar file the project is looking for is included in Java Project.zip</li>
+</div>
+		
+		<footer>
+			Web Design by Bill Jellesma
+		</footer>
+	</body>
+</html>
